@@ -4,8 +4,15 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #282828;
   color: #dcdcdc;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282828+0,3a3a3a+50,282828+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282828+0,303030+50,282828+100 */
+  background: #282828; /* Old browsers */
+  background: -moz-linear-gradient(top,  #282828 0%, #303030 50%, #282828 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #282828 0%,#303030 50%,#282828 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #282828 0%,#303030 50%,#282828 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
+
 }
 
 a {
@@ -19,6 +26,8 @@ a {
 
 h1 {
   margin: 0;
+  font-size: 24px;
+  line-height: 22px;
 }
 
 .main {
@@ -35,6 +44,7 @@ h1 {
 
 .id-form input {
   margin-right: 10px;
+  width: 50%;
 }
 
 button {
@@ -80,7 +90,7 @@ button {
 
 .swiper.slider {
   width: 100%;
-  height: 60vh;
+  height: 40vh;
 }
 .swiper.thumbnails {
   width: 100%;
@@ -88,6 +98,13 @@ button {
   margin-top: 10px;
 }
 
+.swiper.thumbnails .swiper-slide {
+  opacity: 0.4;
+}
+
+.swiper.thumbnails .swiper-slide.swiper-slide-thumb-active  {
+  opacity: 1;
+}
 .explain {
   font-size: 12px;
   margin-bottom: 30px;
